@@ -1,17 +1,19 @@
-import Header  from "./components/Header.js";
-function App() {
-  return ( 
-    <div class Name="wrap">
-    {/* <!-- 상단 영역 --> */}
-     <Header/>
-    <div class Name ="main"></div>
-    {/* <!-- 하단 영역 --> */}
-    <footer class Name ="footer"></footer>
-  </div>
-     
-     
+import Header from "./components/Header";
+import Visual from "./components/Visual";
+import Recommend from "./components/Recommend";
 
-   
+function App() {
+  return (
+    <div className="wrap">
+      {/* <!-- 상단 영역 --> */}
+      <Header />
+      <div className="main">
+        <Visual />
+        <Recommend />
+      </div>
+      {/* <!-- 하단 영역 --> */}
+      <footer className="footer"></footer>
+    </div>
   );
 }
 
