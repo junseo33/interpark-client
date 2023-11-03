@@ -1,11 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+
 import "../styles/recommend.css";
 import "../styles/common.css";
 import { useRef } from "react";
 
 function Recommend() {
-  // js 코드 자리
+  //  js 코드 자리
   // JSX 의 요소를 React 에서 참조
   const swiperRef = useRef();
 
@@ -51,6 +56,7 @@ function Recommend() {
               onSwiper={(swiper) => {
                 swiperRef.current = swiper;
               }}
+              modules={[Navigation]}
               className="recommend-slide"
             >
               <SwiperSlide>
